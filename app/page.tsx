@@ -5,14 +5,20 @@ import styles from "../styles/home.module.css";
 export default function Home() {
   return (
     <main>
-      <div className="headeing">
-        <div className="startlink">Get started by editing <a href="https://runboot-nine.vercel.app/">https://runboot-nine.vercel.app/</a></div>
-        <div className="headeingLogo"><span className="headeingLogoSpan">by</span>Runboot</div>
+      <div className={styles.headingWrap}>
+        <div className={styles.heading}>
+          <div className={styles.startlink}>Get started by editing <a href="https://runboot-nine.vercel.app/" className={styles.startlinkA}>runboot-nine.vercel.app</a></div>
+          <div className={styles.headeingLogo}><span className={styles.headeingLogoSpan}>by</span> Runboot</div>
+        </div>
+        <div className={styles.logoWrap}>
+          <div className={styles.logo}>
+            Runboot.<span>jp</span>
+          </div>
+        </div>
+        <div className={styles.rootNavLinksWrap}>
+          <RootNavLinks />
+        </div>
       </div>
-      <div className="h1">
-        Runboot.<span>jp</span>
-      </div>
-      <RootNavLinks />
     </main>
   );
 }
